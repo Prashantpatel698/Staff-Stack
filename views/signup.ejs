@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body> 
+  <div class="form-container">
+    <div class="form">
+        <h1>Sign Up</h1>
+        <form action="/signup" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="username" placeholder="Username" required>
+          <label for="email">Email</label>
+          <input type="email" name="email" placeholder="Email" required>
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Enter your password" required>
+         <i class="fa fa-eye" id="eye-icon"           onclick="togglePassword()"></i>
+          <input type="checkbox" class="term" id="terms" name="terms" required>
+          <label for="terms">I agree to the Terms and Conditions</label>
+          <button type="submit">Create Account</button>
+
+        </form>
+        
+        <a target="" href="/signin">Already h
+          ave an account? Sign in </a>
+      </div>
+     <!-- <div class="image-container">
+
+       <img src="https://cdn-lite.ip2location.com/img/sign-up.png">
+
+    </div>   -->
+  </div>
+</body>
+</html>
+  
+
+    

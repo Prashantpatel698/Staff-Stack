@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylesheets/style.css">
+</head>
+<body> 
+  <div class="form-container">
+    <div class="form">
+        <h1>Sign In</h1>
+
+        <% if(error.length > 0){%>
+            <p class="error"><%= error%></p>
+        <% } %>
+
+
+        <form action="/signin" method="post">
+          <label for="name">Name</label>
+          <input type="text" name="username" placeholder="Username" required>
+
+          <label for="password">Password</label>
+          <input type="password" name="password" placeholder="Enter your password" required>
+         <i class="fa fa-eye" id="eye-icon"           onclick="togglePassword()"></i>
+   
+          <button type="submit">Login Account</button>
+
+        </form>
+        <a href="/forget"> Forget password?</a>
+        
+        <a target="" href="/signup">Not yet registered? Sign up </a>
+      </div>
+     <!-- <div class="image-container">
+
+       <img src="https://cdn-lite.ip2location.com/img/sign-up.png">
+
+    </div>   -->
+  </div>
+</body>
+</html>
